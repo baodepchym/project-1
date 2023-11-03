@@ -6,6 +6,17 @@
     
     /* font-size: 5vw; */
     color: #000000;
+  .page {
+      line-height: 1.5; /* Adjust the line height value as needed */
+  }
+  
+  .book-title {
+      line-height: 1.5; /* Adjust the line height value for the title as needed */
+  }
+  
+  .book-content {
+      line-height: 1.5; /* Adjust the line height value for the content as needed */
+  }  
   }
   .page {
     width: 30vw;
@@ -78,8 +89,74 @@
   }
   .book .page:nth-child(odd):before {
     background: rgba(0, 0, 0, 0);
+    
 
   }
+  @media (max-width: 400px) {
+    .book {
+        margin-left: 0; /* Adjust margins or spacing for small screens */
+    }
+    .page {
+        background-size: cover; /* Ensure background images scale properly */
+    }
+    .book-title {
+        font-size: 20px; /* Adjust title font size for small screens */
+    }
+    .book-content {
+        font-size: -4px; /* Adjust content font size for small screens */
+        margin-left: 10px; /* Adjust content margins or padding for small screens */
+    }
+}
+
+@media (max-width: 768px) {
+  .book {
+      margin-left: 0; /* Adjust margins or spacing as needed */
+  }
+  .page {
+      background-size: cover; /* Ensure background images scale properly */
+      font-size: 14px; /* Adjust text size as needed */
+  }
+  .book-title {
+      font-size: 20px; /* Adjust title font size */
+  }
+  .book-content {
+      font-size: 14px; /* Adjust content font size */
+      margin-left: 10px; /* Adjust content margins or padding */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+  .book {
+      margin-left: 0; /* Adjust margins or spacing for screens in this range */
+  }
+  .page {
+      background-size: cover; /* Ensure background images scale properly */
+  }
+  .book-title {
+      font-size: 24px; /* Adjust title font size for screens in this range */
+  }
+  .book-content {
+      font-size: 16px; /* Adjust content font size for screens in this range */
+      margin-left: 10px; /* Adjust content margins or padding for screens in this range */
+  }
+}
+
+
+@media (max-width: 1025px) {
+  .book {
+      margin-left: 0; /* Adjust margins or spacing for screens up to 1025px */
+  }
+  .page {
+      background-size: cover; /* Ensure background images scale properly */
+  }
+  .book-title {
+      font-size: 24px; /* Adjust title font size for screens up to 1025px */
+  }
+  .book-content {
+      font-size: 16px; /* Adjust content font size for screens up to 1025px */
+      margin-left: 10px; /* Adjust content margins or padding for screens up to 1025px */
+  }
+}
   .page p {
     text-align: justify; /* Căn lề đều */
     text-justify: inter-word; /* Căn lề từng từ */
@@ -192,7 +269,6 @@ h2 {
 .formatted-text p {
   text-align: left; /* Reset text alignment to left for the last line */
 }
-  
   
   
   
