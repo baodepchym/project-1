@@ -230,7 +230,7 @@ h6 {
   height: 100vh;
   background: url("../img/home_img.jpg") top center;
   background-size: cover;
-  margin-left:-20px;
+  margin-left: 40px;
 }
 
 #hero:before {
@@ -1123,7 +1123,16 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+  #image-resp img {
+    margin-left: 400px;
+  }
+  #image-resp img.two{
+    margin-left:400px;
+     }
 }
+  
+
+
 details > summary {
   padding: 4px;
   width: 200px;
@@ -1209,13 +1218,28 @@ details > p {
   padding: 0 20px;
   vertical-align: top;
 }
-.btn-news {
-  color: #333;
-  font-size: 14px;
-  font-weight: bold;
-  padding-bottom: 30px;
-  text-align: center;
+.btn:hover {
+  background-color: #0056b3; /* Màu nền khi di chuột vào */
+  color: #fff; /* Màu chữ khi di chuột vào */
+  transform: scale(1.1); /* Phóng to khi di chuột vào */
 }
+/* CSS cho nút button */
+.btn {
+  background-color: #007bff; /* Màu nền mặc định */
+  color: #fff; /* Màu chữ mặc định */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Tạo hiệu ứng mịn màng */
+}
+
+/* Hiệu ứng khi di chuột vào nút */
+.btn:hover {
+  background-color: #0056b3; /* Màu nền khi di chuột vào */
+  color: #fff; /* Màu chữ khi di chuột vào */
+}
+
 .btn-news.btn-contests a {
   color: #fff;
   font-family: 'nimbus-sans-condensed', sans-serif;
@@ -1230,6 +1254,8 @@ details > p {
 }
 .card {
   margin: 10px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Thêm bóng mờ */
 }
 
     /* CSS cho màn hình trắng đẹp */
@@ -1247,11 +1273,12 @@ details > p {
     .modal-content {
       position: absolute;
       top: 50%;
-      left: 57%;
+      left: 45%;
       transform: translate(-50%, -50%);
       background-color: #fff;
       padding: 20px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      width:500px;
     }
 
     /* CSS cho nút đóng video */
@@ -1263,3 +1290,16 @@ details > p {
       right: 20px;
       text-decoration: none;
     }
+    .content {
+      display: flex;
+      align-items: center;
+  }
+
+
+  .image {
+      flex: 1;
+  }
+
+  .modal-content {
+    background-color: transparent;
+  }

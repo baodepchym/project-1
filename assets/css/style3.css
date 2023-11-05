@@ -6,17 +6,7 @@
     
     /* font-size: 5vw; */
     color: #000000;
-  .page {
-      line-height: 1.5; /* Adjust the line height value as needed */
-  }
-  
-  .book-title {
-      line-height: 1.5; /* Adjust the line height value for the title as needed */
-  }
-  
-  .book-content {
-      line-height: 1.5; /* Adjust the line height value for the content as needed */
-  }  
+ 
   }
   .page {
     width: 30vw;
@@ -106,6 +96,9 @@
         font-size: -4px; /* Adjust content font size for small screens */
         margin-left: 10px; /* Adjust content margins or padding for small screens */
     }
+    #model-content {
+      margin: 0 auto; width:50% ;left:-118px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -122,6 +115,9 @@
   .book-content {
       font-size: 14px; /* Adjust content font size */
       margin-left: 10px; /* Adjust content margins or padding */
+  }
+  #model-content-resp {
+    margin: 0 auto; width:50% ;left:-118px;
   }
 }
 

@@ -45,6 +45,45 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    /* CSS để làm cho div "modal-content-resp" và hình ảnh "image-resp" responsive */
+    #modal-content-resp {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 500px;
+    }
+  
+    #image-resp img {
+      max-width: 100%; /* Hình ảnh không vượt quá chiều rộng của phần tử cha */
+      height: auto; /* Giữ cho tỷ lệ khung hình */
+    }
+    @media (min-width: 1200px) {
+      #image-resp img {
+        margin-left: 0;
+      }
+      #modal-content-resp {
+        margin-left: 235px;
+      }
+    }
+      /* Đặt margin-left thành 135px khi kích thước màn hình nhỏ hơn 1200px */
+    @media (max-width: 1199px) {
+      #image-resp img {
+        margin-left: 0px;
+      }
+      #modal-content-resp {
+        margin-left: 65px;
+      }
+    }
+    @media (max-width: 400px) {
+      #image-resp img {
+        margin-left: 0px;
+      }
+      #modal-content-resp {
+        margin-left: 0px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -57,16 +96,16 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="./assets/img/logan-preshaw-valorantflyingpig-lp-west-1500 (1).png" alt=""
+        <!-- <img src="./assets/img/logan-preshaw-valorantflyingpig-lp-west-1500 (1).png" alt=""
           class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Bao Dinh</a></h1>
+        <h1 class="text-light"><a href="index.html">Bao Dinh</a></h1> -->
         <div class="mt-3 text-center" id="portfolio-languages">
 
-        </div>
-        <div class="social-links mt-3 text-center">
-          <a href="https://youtube.com/tudinh" class="youtube" target="_blank"><i class="bx bxl-youtube"></i></a>
+       </div>
+        <!-- <div class="social-links mt-3 text-center">
+          <a href="https://youtube.com/tudinh" class="youtube" target="_blank"><i class="bx bxl-youtube"></i></a> --> -->
           <!-- <a href="https://www.facebook.com/tudinhacoustic" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a> -->
-          <a href="https://www.linkedin.com/in/tudinhacoustic" class="linkedin" target="_blank"><i
+          <!-- <a href="https://www.linkedin.com/in/tudinhacoustic" class="linkedin" target="_blank"><i
               class="bx bxl-linkedin"></i></a>
           <a href="http://tudinhblog.com" class="link"><i class="bx bx-link" target="_blank"></i></a>
           <a href="mailto:baoddinh2408@gmail.com" class="envelope"><i class="bx bx-envelope" target="_blank"></i></a>
@@ -74,7 +113,7 @@
           <a href="https://join.skype.com/invite/hCLZM9DAWnyt" class="youtube" target="_blank"><i
               class="bx bxl-skype"></i></a>
         </div>
-      </div>
+      </div> -->
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
@@ -99,7 +138,7 @@
         </ul>
       </nav><!-- .nav-menu -->
     </div>
-  </header>End Header
+  </header>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
@@ -122,102 +161,28 @@
               <h2 id="about-title">Báo điện tử</h2>
             </div>
           </div>
-          <div class="book">
-            <div id="pages" class="pages" style="margin-left:125px">
-
-              <div class="page"
-                style="z-index: 32;background-image: url(&quot;https://ocean.si.edu/sites/default/files/styles/full_width_largest/public/25691336465_982637ea03_o.jpg.webp?itok=i3ExPDcs&quot;);background-color: #cccccc;">
-                <p>Open Me, <br>please!</p>
-              </div>
-              <div class="page"></div>
-              <div class="page">
-                <h2 class="book-title"><em>Cảm nhận về máy trường thân yêu</em></h2>
-                <h3 style="text-align: right;padding: 20px;font-size: 1rem" padding="10px">-by Phạm Thị Ái Nhi- </h3>
-                <p class="book-content" style="margin: 0; padding: 0; padding-top: 0.5%;margin-left:20px"> Ngôi trường
-                  trung học phổ thông Thống Nhất là nơi mà </p>
-
-                <p class="book-content" style="margin: 0; padding: 0; padding-top: 0.5%;"> em đã trải qua ba năm tuổi
-                  teen của mình, là nơi em học hỏi, trưởng thành và tạo nên những kỷ niệm đáng nhớ trong cuộc đời.<br>
-                  Thứ phiên bạn bè, giáo viên, và những học sinh đến từ khắp nơi tạo nên sự đa dạng về văn hóa, tuổi
-                  tác, cách nhìn nhận vấn đề. Đây cũng chính là nơi để em trải nghiệm, tìm tòi và phát triển kỹ năng
-                  trong các hoạt động ngoại khóa. Khi bước vào cổng trường, không gian yên tĩnh và sạch sẽ đã làm cho em
-                  cảm thấy thoải mái và tươi mới. Các tòa nhà rực rỡ với màu sắc và hình thức hiện đại, mang đến cảm
-                  giác độc đáo và tươi vui khác biệt so với các trường khác. Các phòng học rộng rãi, thoáng mát, được
-                  trang bị đầy đủ các thiết bị hiện đại, tạo điều kiện tốt nhất cho các em học sinh được đào tạo và phát
-                  triển tối ưu. Không chỉ có nơi học hành thuận lợi, ngôi trường còn được trang bị đầy đủ các phòng chức
-                  năng khác như thư viện, phòng máy, phòng thể được tổ chức, giúp học sinh có cơ hội giao lưu và hiểu
-                  thêm về các văn hóa khác nhau.Tuy nhiên, như bất cứ ngôi trường nào, ngôi trường Thống Nhất cũng còn
-                  số hạn chế</p>
-              </div>
-
-              <div class="page">
-                <p> Sự cạnh tranh trong học tập là một thử thách không nhỏĐòi hỏi chúng em phải cố gắng hơn để đạt được
-                  thành tích cao trong các bài kiểm tra và kỳ thi. Đồng thời, quy định khắt khe về kỷ luật và quy tắc
-                  của trường cũng đòi hỏi sự tuân thủ nghiêm ngặt từ phía học sinh. Đôi khi, nó khiến cho em cảm thấy
-                  khó khăn trong quá trình học tập. Điều này yêu cầu em phải cố gắng nhiều hơn để có thể đáp ứng được
-                  đòi hỏi của chương trình học. Nhờ vào mái trường này, em có thể học hỏi, trau dồi thêm kiến thức, được
-                  tạo điều kiện để rèn luyện kỹ năng và định hướng sự nghiệp của mình. Mái trường trung học phổ thông
-                  này đóng vai trò quan trọng trong quá trình trưởng thành và phát triển về mặt tinh thần cũng như kỹ
-                  năng của em.
-                  Cuối cùng, khi nhìn lại ba năm học tập tại Thống Nhất, em cảm thấy may mắn khi được học tập ở đây, vì
-                  có cơ hội tiếp xúc với không gian và nguồn lực tốt nhất để phát triển năng lực cá nhân. Các thầy cô
-                  giáo nhiệt tình và các bạn học hòa đồng tạo nên một môi trường rất tốt để em phát triển.<br> Hy vọng
-                  rằng em có thể tận dụng tối đa những cơ hội từ ngôi trường này và trưởng thành một cách tốt nhất.
-                  Những kỷ niệm tại ngôi trường này cũng sẽ luôn ở trong tâm trí em, là niềm tự hào của em trong suốt
-                  cuộc đời.</p>
-                <p class="book-content" style="margin: 0; padding: 0; padding-top: 0.5%;margin-left:20px"> Ngôi trường
-                  trung học phổ thông Thống Nhất là nơi mà </p>
-
-              </div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-              <div class="page"></div>
-            </div>
-          </div>
         </div>
-    </section>
+        <iframe style="width:500px; height: ;" src="https://docs.google.com/document/d/1Quqha6GzGKVwSEuSNIkE87ZpLiSp3XIyszZ0T0-YTF0/edit?usp=sharing"></iframe>
 
-    <section id="news" class="news">
-      <div class="container" style="background-color : white;">
+      </div>
+    </section>
+    <!-- news section -->
+    <section id="news" class="news ">
+
+      <div class="container">
         <h2 class="news-title">Tin tức 24h</h2>
         <div class="row">
           <div class="ct-blog col-sm-6 col-md-4">
             <div class="inner">
               <div class="fauxcrop">
-                <a href="https://vnexpress.net/khong-the-khuyen-khich-can-bo-vuot-rao-thuc-thi-nhiem-vu-4671840.html"><img
-                    alt="News Entry"
-                    src="https://i1-vnexpress.vnecdn.net/2023/11/01/202305311011156488-24-6482-1698832967.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=UfhUFgWoFwFDOH5kgaVDvQ"></a>
+                <a href="https://vnexpress.net/ha-noi-chi-tra-hon-130-ty-dong-ho-tro-nan-nhan-vu-chay-chung-cu-mini-4673192.html"><img alt="News Entry" src="https://i1-vnexpress.vnecdn.net/2023/11/05/ho-tro-7207-1699157134.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=520LVaHUgyY41bN5DbVIcw"></a>
               </div>
               <div class="ct-blog-content">
                 <div class="ct-blog-date">
-                  <span>March</span><strong>1</strong>
+                  <span>Tháng 11</span><strong>8</strong>
                 </div>
                 <h3 class="ct-blog-header">
-                  'Không thể khuyến khích cán bộ vượt rào thực thi nhiệm vụ'
+                  Hà Nội chi trả hơn 130 tỷ đồng hỗ trợ nạn nhân vụ cháy chung cư mini
                 </h3>
               </div>
             </div>
@@ -225,17 +190,14 @@
           <div class="ct-blog col-sm-6 col-md-4">
             <div class="inner">
               <div class="fauxcrop">
-                <a
-                  href="https://vnexpress.net/iran-keu-goi-cac-nuoc-hoi-giao-ngung-giao-thuong-voi-israel-4671880.html"><img
-                    alt="News Entry"
-                    src="https://i1-vnexpress.vnecdn.net/2023/11/01/33Z39QN-highres-1428-1698839660.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=8Zw6BEpmxOGAD6qAjtxxwg"></a>
+                <a href="https://vnexpress.net/hezbollah-phong-ten-lua-dan-dao-nui-lua-vao-tien-don-israel-4673200.html"><img alt="News Entry" src="https://i1-vnexpress.vnecdn.net/2023/11/05/lebanon-003-6951-1697459338-31-8186-4510-1699159233.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=pVIP-7Fj_bPd7IUEAvsy1A"></a>
               </div>
               <div class="ct-blog-content">
                 <div class="ct-blog-date">
-                  <span>February</span><strong>27</strong>
+                  <span>Tháng 11</span><strong>6</strong>
                 </div>
                 <h3 class="ct-blog-header">
-                  Iran kêu gọi các nước Hồi giáo ngừng giao thương với Israel
+                  Hezbollah phóng tên lửa đạn đạo 'Núi lửa' vào tiền đồn Israel
                 </h3>
               </div>
             </div>
@@ -243,15 +205,14 @@
           <div class="ct-blog col-sm-6 col-md-4">
             <div class="inner">
               <div class="fauxcrop">
-                <a href="https://vnexpress.net/gia-xang-moi-nhat-hom-nay-4671742.html"><img alt="News Entry"
-                    src="https://cdnimg.vietnamplus.vn/uploaded/mzdic/2022_10_24/ttxvn_can_tho_yeu_cau_dam_bao_nguon_cung_xang_1_24.jpg"></a>
+                <a href="https://vnexpress.net/luong-toi-thieu-cong-chuc-se-bang-khoi-doanh-nghiep-4673209.html"><img alt="News Entry" src="https://i1-vnexpress.vnecdn.net/2023/11/05/cg2a6056-1699162757-3449-1699163105.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=iaH_Xas7QgpYm9vJmMQVGA"></a>
               </div>
               <div class="ct-blog-content">
                 <div class="ct-blog-date">
-                  <span>February</span><strong>25</strong>
+                  <span>Tháng 11</span><strong>5</strong>
                 </div>
                 <h3 class="ct-blog-header">
-                  Giá xăng lên sát 24.000 đồng một lít
+                  Lương tối thiểu công chức sẽ bằng khối doanh nghiệp
                 </h3>
               </div>
             </div>
@@ -259,57 +220,50 @@
           <div class="ct-blog col-sm-6 col-md-4">
             <div class="inner">
               <div class="fauxcrop">
-                <a href="https://vnexpress.net/jordan-rut-dai-su-khoi-israel-4671907.html"><img alt="News Entry"
-                    src="https://i1-vnexpress.vnecdn.net/2023/11/01/F181108YS03-jpeg-9756-1698856263.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=rcT9-Xq7ynC2tRDYLvvU5Q"></a>
+                <a href="https://vnexpress.net/duong-ven-bien-hon-4-600-ty-dong-o-nghe-an-4673015.html"><img alt="News Entry" src="https://media.nghean24h.vn/image_rs/2023/10/23/32/can-canh-tuyen-duong-ven-bien-nghe-an-hon-4600-ty-dong-dang-dan-thanh-hinh1-1698048530.jpg?width=500&height=10000"></a>
               </div>
               <div class="ct-blog-content">
                 <div class="ct-blog-date">
-                  <span>February</span><strong>23</strong>
+                  <span>Tháng 11</span><strong>4</strong>
                 </div>
                 <h3 class="ct-blog-header">
-                  Jordan rút Đại sứ khỏi Israel
-                </h3>
+                  Đường ven biển hơn 4.600 tỷ đồng ở Nghệ An                </h3>
               </div>
             </div>
           </div>
           <div class="ct-blog col-sm-6 col-md-4">
             <div class="inner">
               <div class="fauxcrop">
-                <a href="https://vnexpress.net/chu-tich-nuoc-chu-tri-le-don-tong-thong-mong-co-4671705.html"><img
-                    alt="News Entry"
-                    src="https://i1-vnexpress.vnecdn.net/2023/11/01/vvt-mc-1-6910-1698830598.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=iW5fDofQzAEEjNXhCgDNnQ"></a>
+                <a href="https://vnexpress.net/lap-dam-cau-bo-hanh-dau-tien-bang-qua-xa-lo-ket-noi-metro-so-1-4673194.html"><img alt="News Entry" src="https://i1-vnexpress.vnecdn.net/2023/11/05/z4850474631854-7b706965aab70ca-4124-7797-1699160710.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=vedvacQxrTwBL4kllQyWjQ"></a>
               </div>
               <div class="ct-blog-content">
                 <div class="ct-blog-date">
-                  <span>February</span><strong>20</strong>
+                  <span>Tháng 11</span><strong>2</strong>
                 </div>
                 <h3 class="ct-blog-header">
-                  Chủ tịch nước chủ trì lễ đón Tổng thống Mông Cổ </h3>
+                  Lắp dầm cầu bộ hành đầu tiên băng qua xa lộ kết nối Metro số 1                </h3>
               </div>
             </div>
           </div>
           <div class="ct-blog col-sm-6 col-md-4">
             <div class="inner">
               <div class="fauxcrop">
-                <a
-                  href="https://vnexpress.net/man-suong-bi-mat-bao-phu-chien-dich-tan-cong-gaza-cua-israel-4671268.html"><img
-                    alt="News Entry"
-                    src="https://i1-vnexpress.vnecdn.net/2023/10/31/gaza-4092-1698724009.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=VS6KcZ6MyemFOyyJOr5ZYA"></a>
+                <a href="https://vnexpress.net/hang-chuc-nghin-nguoi-my-tuan-hanh-ung-ho-palestine-4673151.html"><img alt="News Entry" src="https://i1-vnexpress.vnecdn.net/2023/11/05/5563187178137268073a-My-2203-1699147852.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=6qJOtJPAf0s6ZDYqCbt44A"></a>
               </div>
               <div class="ct-blog-content">
                 <div class="ct-blog-date">
-                  <span>February</span><strong>16</strong>
+                  <span>Tháng 11</span><strong>1</strong>
                 </div>
                 <h3 class="ct-blog-header">
-                  Màn sương bí mật bao phủ chiến dịch tấn công Gaza của Israel </h3>
+                  Hàng chục nghìn người Mỹ tuần hành ủng hộ Palestine                </h3>
               </div>
             </div>
           </div>
         </div>
+        
+        
       </div>
     </section>
-
-
 
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
@@ -415,12 +369,34 @@
             </div>
           </div> -->
           <div class="card" style="width: 50rem;">
-            <img class="card-img-top" src="" alt="Card image cap">
+            <img class="card-img-top" src="assets/img/371541372_3192693774360524_1199648580555196554_n.jpg" alt="Card image cap">
             <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              <h4 class="card-title">Tổ 1</h4>
+              <p class="card-text">Học hành, sáng tạo, đam mê.
                 content.</p>
-              <button class="btn btn-primary" id="openVideo">Go somewhere</a>
+              <button class="btn btn-primary" id="openVideo">Thông tin về thành viên</a>
+            </div>
+          </div>
+          <div class="card" style="width: 50rem;">
+            <img class="card-img-top"
+              src=""
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Tổ 2</h4>
+              <p class="card-text">Tư duy, năng lực, cải tie.
+                content.</p>
+              <button class="btn btn-primary" id="openVideoTwo">Thông tin về thành viên</a>
+            </div>
+          </div>
+          <div class="card" style="width: 50rem;">
+            <img class="card-img-top"
+              src="./assets/img/portfolio/msg5552882380-562.jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Tổ 3</h4>
+              <p class="card-text">Sáng tạo, phát triển, đổi mới.
+                content.</p>
+              <button class="btn btn-primary" id="openVideoThree">Thông tin về thành viên</a>
             </div>
           </div>
           <div class="card" style="width: 50rem;">
@@ -428,94 +404,60 @@
               src="https://cdnimg.vietnamplus.vn/uploaded/mzdic/2022_10_24/ttxvn_can_tho_yeu_cau_dam_bao_nguon_cung_xang_1_24.jpg"
               alt="Card image cap">
             <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              <h4 class="card-title">Tổ 4</h4>
+              <p class="card-text">Nỗ lực, đoàn kết, phấn đấu.
                 content.</p>
-              <button class="btn btn-primary" id="openVideoTwo">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 50rem;">
-            <img class="card-img-top"
-              src="https://cdnimg.vietnamplus.vn/uploaded/mzdic/2022_10_24/ttxvn_can_tho_yeu_cau_dam_bao_nguon_cung_xang_1_24.jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <button class="btn btn-primary" id="openVideoThree">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 50rem;">
-            <img class="card-img-top"
-              src="https://cdnimg.vietnamplus.vn/uploaded/mzdic/2022_10_24/ttxvn_can_tho_yeu_cau_dam_bao_nguon_cung_xang_1_24.jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <button class="btn btn-primary" id="openVideoFour">Go somewhere</a>
+              <button class="btn btn-primary" id="openVideoFour">Thông tin về thành viên</a>
             </div>
           </div>
         </div>
     </section><!-- End Resume Section -->
     <!-- Màn hình trắng cho video -->
     <div id="videoModal" class="modal">
-      <div class="modal-content" style="margin: 0 auto;  ;">
+      <div class="modal-content" style="margin: 0 auto;margin-left:225px  ;">
         <span class="close" id="closeVideo">&times;</span>
-        <h2>Title of the Video</h2>
-        <p>Description of the Video.</p>
-
-
-        <h3>Quiz</h3>
-        <p>What is the capital of France?</p>
-        <input type="text" id="quizAnswer">
-        <button onclick="checkAnswer()">Submit</button>
-        <p id="quizResult"></p>
+        <div class="image" id="image-resp">
+          <img src="./assets/img/Tổ-3_page-0001.jpg"  style="width:500px" alt="Hình ảnh">
+      </div>
       </div>
     </div>
-    <!-- Màn hình trắng cho video -->
+    <!-- Màn hình trắng cho video 2 -->
     <div id="videoModalTwo" class="modal">
-      <div class="modal-content" style="margin: 0 auto;  ;">
+      <div class="modal-content" style="margin: 0 auto;margin-left:225px  ;">
         <span class="close" id="closeVideoTwo">&times;</span>
-        <h2>Title of the Video 2</h2>
-        <p>Description of the Video 2.</p>
+        <div class="image" id="image-resp">
+          <img src="./assets/img/Tổ-3_page-0001.jpg"  style="width:500px" alt="Hình ảnh">
+      </div>
 
 
-        <h3>Quiz</h3>
-        <p>What is the capital of France?</p>
-        <input type="text" id="quizAnswer">
-        <button onclick="checkAnswer()">Submit</button>
-        <p id="quizResult"></p>
+        
       </div>
     </div>
-    <!-- Màn hình trắng cho video -->
-    <div id="videoModalThree" class="modal">
-      <div class="modal-content" style="margin: 0 auto;  ;">
-        <span class="close" id="closeVideoThree">&times;</span>
-        <h2>Title of the Video 3</h2>
-        <p>Description of the Video 3.</p>
-
-
-        <h3>Quiz</h3>
-        <p>What is the capital of France?</p>
-        <input type="text" id="quizAnswer">
-        <button onclick="checkAnswer()">Submit</button>
-        <p id="quizResult"></p>
+    <!-- Màn hình trắng cho video 3-->
+    <div id="videoModalThree" class="modal" >
+      <div class="modal-content" id="modal-content-resp">        
+        <div class="content">
+          <div class="text">
+              <p>
+               
+              </p>
+          </div>
+          <div class="image" id="image-resp">
+              <img src="./assets/img/Tổ-3_page-0001.jpg" id="image-resp" style="width:500px" alt="Hình ảnh">
+          </div>
       </div>
-    </div>
-    <!-- Màn hình trắng cho video -->
+      <!-- End of additional content -->
+
+  </div>
+</div>
+</body>
+    <!-- Màn hình trắng cho video 4-->
     <div id="videoModalFour" class="modal">
-      <div class="modal-content" style="margin: 0 auto;  ;">
-        <span class="close" id="closeVideoFour">&times;</span>
-        <h2>Title of the Video 4</h2>
-        <p>Description of the Video 4.</p>
-
-
-        <h3>Quiz</h3>
-        <p>What is the capital of France?</p>
-        <input type="text" id="quizAnswer">
-        <button onclick="checkAnswer()">Submit</button>
-        <p id="quizResult"></p>
+      <div class="modal-content" style="margin: 0 auto;margin-left:225px  ;">
+        <span class="close" id="closeVideo">&times;</span>
+        <div class="image" id="image-resp">
+          <img src="./assets/img/Tổ-3_page-0001.jpg"  style="width:500px" alt="Hình ảnh">
+      </div>
       </div>
     </div>
     <!-- ======= Portfolio Section ======= -->
@@ -529,34 +471,81 @@
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-api-performance">API Performance</li>
+              <li data-filter="*" class="filter-active">Tất cả</li>
+              <li data-filter=".filter-api-performance">Về trường</li>
               <!-- <li data-filter=".filter-app">API Perfomance</li> -->
-              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-app">Về lớp học</li>
               <!-- <li data-filter=".filter-card">Card</li> -->
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-web">.</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
           <!--API Perfomance-->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-api-performance">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="" class="img-fluid" alt="">
+              <img src="./assets/img/portfolio/photo1698889428 (4).jpeg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox" title="API 1"><i
+                <a href="./assets/img/portfolio/photo1698889428 (4).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="API 1"><i
                     class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-api-performance">
             <div class="portfolio-wrap">
-              <img src="" class="img-fluid" alt="" id="video-gif">
+              <img src="./assets/img/portfolio/photo1699157308.jpeg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/photo1698636948.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                <a href="/assets/img/portfolio/photo1699157308.jpeg data-gallery="portfolioGallery" class="portfolio-lightbox" title="API 1"><i
+                    class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div> <div class="col-lg-4 col-md-6 portfolio-item filter-api-performance">
+            <div class="portfolio-wrap">
+              <img src="./assets/img/portfolio/photo1699157308 (4).jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="./assets/img/portfolio/photo1699157308 (4).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="API 1"><i
+                    class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div> <div class="col-lg-4 col-md-6 portfolio-item filter-api-performance">
+            <div class="portfolio-wrap">
+              <img src="./assets/img/portfolio/photo1699157308 (2).jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="./assets/img/portfolio/photo1699157308 (2).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="API 1"><i
+                    class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div> 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-api-performance">
+            <div class="portfolio-wrap">
+              <img src="./assets/img/portfolio/photo1699157308 (1).jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="./assets/img/portfolio/photo1699157308 (1).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="API 1"><i
+                    class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-api-performance">
+            <div class="portfolio-wrap">
+              <img src="./assets/img/portfolio/photo1699157308 (3).jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="./assets/img/portfolio/photo1699157308 (3).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="API 1"><i
+                    class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app ">
+            <div class="portfolio-wrap">
+              <img src="./assets/img/portfolio/photo1698889426 (2).jpeg" class="img-fluid" alt="" id="video-gif">
+              <div class="portfolio-links">
+                <a href="./assets/img/portfolio/photo1698889426 (2).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
                   title="API 2"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -565,9 +554,9 @@
           <!--App-->
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-app-ios-1.png" class="img-fluid" alt="">
+              <img src="./assets/img/portfolio/photo1698889426 (1).jpeg" class="img-fluid" alt="" style="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-app-ios-1.png" data-gallery="portfolioGallery"
+                <a href="./assets/img/portfolio/photo1698889426 (1).jpeg" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -576,9 +565,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-app-android-1.png" class="img-fluid" alt="">
+              <img src="./assets/img/portfolio/photo1698889426.jpeg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-app-android-1.png" data-gallery="portfolioGallery"
+                <a href="./assets/img/portfolio/photo1698889426.jpeg" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -587,9 +576,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-app-android-2.png" class="img-fluid" alt="">
+              <img src="./assets/img/portfolio/photo1698889428 (1).jpeg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-app-android-2.png" data-gallery="portfolioGallery"
+                <a href="./assets/img/portfolio/photo1698889428 (1).jpeg" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -598,9 +587,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-app-android-3.png" class="img-fluid" alt="">
+              <img src="./assets/img/portfolio/photo1698889428.jpeg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-app-android-3.png" data-gallery="portfolioGallery"
+                <a href="./assets/img/portfolio/photo1698889428.jpeg" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" title="App 4"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -609,9 +598,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-app-android-4.png" class="img-fluid" alt="">
+              <img src="./assets/img/portfolio/photo1698889428 (2).jpeg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-app-android-4.png" data-gallery="portfolioGallery"
+                <a href="./assets/img/portfolio/photo1698889428 (2).jpeg" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" title="App 5"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -620,9 +609,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-app-android-5.png" class="img-fluid" alt="">
+              <img src="./assets/img/portfolio/photo1698889428 (3).jpeg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-app-android-5.png" data-gallery="portfolioGallery"
+                <a href="./assets/img/portfolio/photo1698889428 (3).jpeg" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" title="App 6"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -631,9 +620,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/gif.gif" class="img-fluid" alt="">
+              <img src="./assets/img/portfolio/photo1698889428 (4).jpegf" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/gif.gif" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                <a href="./assets/img/portfolio/photo1698889428 (4).jpegf" data-gallery="portfolioGallery" class="portfolio-lightbox"
                   title="App 6"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -643,9 +632,9 @@
           <!--Web-->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-web-1.png" class="img-fluid" alt="">
+              <img src="./assets/img/portfolio/photo1698889428 (4).jpeg.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-web-1.png" data-gallery="portfolioGallery"
+                <a href="./assets/img/portfolio/photo1698889428 (4).jpeg.png" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" title="Web 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -687,9 +676,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/Web-gif.gif" class="img-fluid" alt="" id="video-gif">
+              <img src="./assets/img/portfolio/photo1698889432.jpeg" class="img-fluid" alt="" id="video-gif">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/Web-gif.gif" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                <a href="./assets/img/portfolio/photo1698889432.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
                   title="Web 4"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -698,6 +687,8 @@
 
         </div>
     </section><!-- End Portfolio Section -->
+
+   
     <!-- ======= Facts Section ======= -->
     <section id="facts" class="facts">
       <div class="container">
@@ -722,12 +713,12 @@
             <div class="count-box">
               <div class="icon-container">
                 <i class="bx bx-male-sign"></i>
-                <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1"
+                <span data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="1"
                   class="purecounter"></span>
               </div>
               <div class="icon-container">
                 <i class="bx bx-female-sign"></i>
-                <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1"
+                <span data-purecounter-start="0" data-purecounter-end="17" data-purecounter-duration="1"
                   class="purecounter"></span>
               </div>
             </div>
@@ -763,7 +754,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2 id="contact-title">Contact</h2>
+          <h2 id="contact-title">Liên hệ</h2>
           <p id="contact-desc">Follow the information below, or leave a message.</p>
         </div>
 
@@ -937,7 +928,7 @@
             <div class="card">
               <div class="team-image-wrapper">
                 <img class="team-member-image"
-                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.15.png">
+                  src="assets/img/photo1698972715.jpeg">
               </div>
               <p class="text-blk name">
                 Quỳnh
@@ -1029,6 +1020,8 @@
 
   <script>
     // JavaScript để điều khiển hiển thị và ẩn video
+ 
+
     var openBtn = document.getElementById("openVideo");
     var modal = document.getElementById("videoModal");
     var closeBtn = document.getElementById("closeVideo");
