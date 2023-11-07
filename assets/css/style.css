@@ -1324,8 +1324,9 @@ details > p {
   .modal-content {
     background-color: transparent;
   }
-  .about {
-    background-image: url("4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA");
-    background-size: cover; /* Điều này sẽ đảm bảo rằng hình nền được hiển thị cỡ toàn màn hình */
-    background-position: center; /* Điều này đặt vị trí của hình nền ở giữa */
-  }
+  /* .about {
+    background-image: url("https://scontent.fsgn20-1.fna.fbcdn.net/v/t39.30808-6/308994803_519398530190831_2932137522522840045_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=zpltrZkW31MAX_ek3co&_nc_ht=scontent.fsgn20-1.fna&oh=00_AfC-R0G7IbsmJra3Cmpe1787YOWChpD3B3z-wAB6OSyryA&oe=654F14F4");
+    background-size: cover; 
+    background-position: center;
+    opacity: 0.5;
+  } */
