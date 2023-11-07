@@ -228,9 +228,8 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/home_img.jpg") top center;
+  background: url("../img/IMG_20231107_215912.jpg") top center;
   background-size: cover;
-  margin-left: 40px;
 }
 
 #hero:before {
@@ -1215,8 +1214,9 @@ details > p {
   font-weight: 700;
   letter-spacing: -0.2px;
   line-height: 1.1;
-  padding: 0 20px;
+  padding: 20px;
   vertical-align: top;
+  margin-left: 20%;
 }
 .btn:hover {
   background-color: #0056b3; /* Màu nền khi di chuột vào */
@@ -1255,8 +1255,28 @@ details > p {
 .card {
   margin: 10px;
   border-radius: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Thêm bóng mờ */
+  box-shadow: 0 0 10px
+ rgba(0, 0, 0, 0.3); /* Thêm bóng mờ */
 }
+@media(min-width: 1200px){
+   .card{
+    margin-left:1%;
+  }
+}
+@media(max-width: 1380px){
+  .card{
+    margin-left:0;
+  }
+}
+@media (min-width: 992px) {
+  .card-resp {
+    width: 25rem; /* Đặt kích thước thẻ card cho desktop */
+    margin-left: 4%;
+    align-items:center;
+  }
+}
+
+
 
     /* CSS cho màn hình trắng đẹp */
     .modal {
@@ -1276,15 +1296,16 @@ details > p {
       left: 45%;
       transform: translate(-50%, -50%);
       background-color: #fff;
-      padding: 20px;
+      /* padding: 20px; */
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
       width:500px;
     }
+  
 
     /* CSS cho nút đóng video */
     .close {
       color: #000;
-      font-size: 2em;
+      font-size: 0;
       position: absolute;
       top: 10px;
       right: 20px;

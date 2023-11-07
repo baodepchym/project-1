@@ -9,6 +9,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <meta property="og:image" content="img/photo1698584590.jpeg" />
+
   <!-- Favicons -->
   <link href="assets/img/website-icon.png" rel="icon">
   <link href="assets/img/website-icon.png" rel="website-icon">
@@ -46,6 +48,10 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
+    .model {
+      width: 100%;
+      height: 100%;
+    }
     /* CSS để làm cho div "modal-content-resp" và hình ảnh "image-resp" responsive */
     #modal-content-resp {
       display: flex;
@@ -54,33 +60,57 @@
       width: 500px;
     }
   
-    #image-resp img {
-      max-width: 100%; /* Hình ảnh không vượt quá chiều rộng của phần tử cha */
-      height: auto; /* Giữ cho tỷ lệ khung hình */
+    #image-resp {
+      width: 500px;
     }
     @media (min-width: 1200px) {
       #image-resp img {
         margin-left: 0;
       }
-      #modal-content-resp {
-        margin-left: 235px;
+    
+      .modal-content {
+        margin-left: 255px;
       }
+      /* #modal-content-resp {
+        margin-left: 235px;
+      } */
     }
       /* Đặt margin-left thành 135px khi kích thước màn hình nhỏ hơn 1200px */
     @media (max-width: 1199px) {
       #image-resp img {
         margin-left: 0px;
       }
-      #modal-content-resp {
-        margin-left: 65px;
+      .modal-content {
+        margin-left: 75px;
+      }
+      /* #modal-content-resp {
+        margin-left: 75px;
+      } */
+      /* #modal-content-resp-one{
+        margin-left:30%;
+      } */
+    }
+    @media (max-width: 600px) {
+      #image-resp img {
+        margin-left: 0px;
+      }
+      .modal-content {
+        margin-left: 33px;
       }
     }
     @media (max-width: 400px) {
       #image-resp img {
-        margin-left: 0px;
+        margin-left: 0px;      
       }
-      #modal-content-resp {
-        margin-left: 0px;
+      /* .modal-content {
+        margin-left: 40px;
+      } */
+      #image-resp {
+        width: 350px;
+        margin-left: 63px;
+      }
+      #modal-content-resp img{
+        margin-left: -20px;
       }
     }
   </style>
@@ -168,9 +198,11 @@
     </section>
     <!-- news section -->
     <section id="news" class="news ">
+      <div class="row" data-aos="fade-up">
 
       <div class="container">
-        <h2 class="news-title">Tin tức 24h</h2>
+        <div class="section-title">
+          <h2 id="about-title">Báo điện tử</h2>
         <div class="row">
           <div class="ct-blog col-sm-6 col-md-4">
             <div class="inner">
@@ -268,14 +300,16 @@
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
       <div class="container">
+       
 
-        <div class="section-title">
+
+         <div class="section-title">
           <h2 id="resume-title">Cộng đồng nhỏ</h2>
           <p id="resume-desc">Liệu hôm nay các bạn có nghĩ tốt về mình không ta <i class="fa-regular fa-face-thinking"
               style="color: #631855;"></i>.</p>
-        </div>
+         </div>
 
-        <div class="row">
+         <div class="row">
           <!-- <div class="col-lg-6" data-aos="fade-up">
             <h3 class="resume-title" id="sumary-title">Sumary</h3>
             <div class="resume-item pb-0">
@@ -369,6 +403,7 @@
             </div>
           </div> -->
           <div class="card" style="width: 50rem;">
+             <class> </class>
             <img class="card-img-top" src="assets/img/371541372_3192693774360524_1199648580555196554_n.jpg" alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Tổ 1</h4>
@@ -377,9 +412,9 @@
               <button class="btn btn-primary" id="openVideo">Thông tin về thành viên</a>
             </div>
           </div>
-          <div class="card" style="width: 50rem;">
+          <div class="card" style="width: 50rem;;">
             <img class="card-img-top"
-              src=""
+              src="assets/img/photo1699360545.jpeg"
               alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Tổ 2</h4>
@@ -399,7 +434,7 @@
               <button class="btn btn-primary" id="openVideoThree">Thông tin về thành viên</a>
             </div>
           </div>
-          <div class="card" style="width: 50rem;">
+          <div class="card" style="width: 50rem;;">
             <img class="card-img-top"
               src="https://cdnimg.vietnamplus.vn/uploaded/mzdic/2022_10_24/ttxvn_can_tho_yeu_cau_dam_bao_nguon_cung_xang_1_24.jpg"
               alt="Card image cap">
@@ -410,23 +445,25 @@
               <button class="btn btn-primary" id="openVideoFour">Thông tin về thành viên</a>
             </div>
           </div>
+        
         </div>
+       </div> 
     </section><!-- End Resume Section -->
     <!-- Màn hình trắng cho video -->
     <div id="videoModal" class="modal">
-      <div class="modal-content" style="margin: 0 auto;margin-left:225px  ;">
+      <div class="modal-content" style="">
         <span class="close" id="closeVideo">&times;</span>
-        <div class="image" id="image-resp">
-          <img src="./assets/img/Tổ-3_page-0001.jpg"  style="width:500px" alt="Hình ảnh">
+        <div class="image" id="image-resp-one">
+          <img src="./assets/img/portfolio/Cảm-nhận-về-tổ-1-_1_.jpg"  id="image-resp" alt="Hình ảnh">
       </div>
       </div>
     </div>
     <!-- Màn hình trắng cho video 2 -->
     <div id="videoModalTwo" class="modal">
-      <div class="modal-content" style="margin: 0 auto;margin-left:225px  ;">
+      <div class="modal-content" style="">
         <span class="close" id="closeVideoTwo">&times;</span>
-        <div class="image" id="image-resp">
-          <img src="./assets/img/Tổ-3_page-0001.jpg"  style="width:500px" alt="Hình ảnh">
+        <div class="image" id="image-resp-one">
+          <img src="./assets/img/Tổ-3_page-0001.jpg"  id="image-resp" alt="Hình ảnh">
       </div>
 
 
@@ -442,21 +479,21 @@
                
               </p>
           </div>
-          <div class="image" id="image-resp">
-              <img src="./assets/img/Tổ-3_page-0001.jpg" id="image-resp" style="width:500px" alt="Hình ảnh">
+          <span class="close" id="closeVideoThree">&times;</span>
+          <div class="image" id="image-resp-three">
+              <img src="./assets/img/Tổ-3_page-0001.jpg" id="image-resp" style="" alt="Hình ảnh">
           </div>
       </div>
       <!-- End of additional content -->
 
   </div>
 </div>
-</body>
     <!-- Màn hình trắng cho video 4-->
     <div id="videoModalFour" class="modal">
-      <div class="modal-content" style="margin: 0 auto;margin-left:225px  ;">
-        <span class="close" id="closeVideo">&times;</span>
-        <div class="image" id="image-resp">
-          <img src="./assets/img/Tổ-3_page-0001.jpg"  style="width:500px" alt="Hình ảnh">
+      <div class="modal-content" style="">
+        <span class="close" id="closeVideoFour">&times;</span>
+        <div class="image" id="image-resp-four">
+          <img src="./assets/img/Tổ-3_page-0001.jpg"  id="image-resp" alt="Hình ảnh">
       </div>
       </div>
     </div>
